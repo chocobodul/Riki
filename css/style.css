@@ -1,0 +1,116 @@
+﻿/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: #808080; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.header-content img {
+    max-height: 80px; /* Adjust the max height of the logo as needed */
+    max-width: 100%; /* Make sure the logo scales proportionally */
+}
+
+/* Style the header title */
+.header-content h1 {
+    margin-left: 20px; /* Add margin to create space between logo and title */
+    flex-grow: 1; /* Allow the title to grow and take up available space */
+    text-align: right; /* Align the title to the right */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Create the 4-column layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* Hide overflowing content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Different background colors for each column */
+    .column:nth-child(1) {
+        background-color: rgb(255, 229, 180); /* Column 1 color */
+    }
+
+    .column:nth-child(2) {
+        background-color: rgb(255, 229, 180); /* Column 2 color */
+    }
+
+    .column:nth-child(3) {
+        background-color: rgb(255, 229, 180); /* Column 3 color */
+    }
+
+    .column:nth-child(4) {
+        background-color: rgb(255, 229, 180); /* Column 4 color */
+    }
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .column {
+        flex-basis: calc(100% - 20px); /* Adjust the width for smaller screens to display 1 column per row */
+    }
+
+    .column-image,
+    .column-video {
+        max-width: 100%; /* Ensure images and videos scale properly within the columns */
+        max-height: 600px; /* Set a maximum height for images and videos */
+        height: auto;
+    }
+
+    p {
+        max-width: 100%; /* Ensure text content does not overflow the columns */
+    }
+}
+
+/* Default font sizes */
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+}
