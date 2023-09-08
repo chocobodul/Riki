@@ -1,59 +1,160 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive 4 Column Layout</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="slike/logo.png" alt="Logo">
-            <h1>O nama</h1>
-        </div>
-    </header>
-    <div class="container">
-        <div class="column with-background" style="background-color: #ff5733;">
-            <!-- You can add content inside the column -->
-            <h2>Uređenje okoliša</h2>
-            <img src="slike/pergola1.jpg" alt="Image 1" class="column-image">
-            <p>This is the content for column 1.</p>
-        </div>
-        <div class="column with-background" style="background-color: #33ff57;">
-            <!-- You can add content inside the column -->
-            <h2>Column 2</h2>
-            <img src="slike/buket.jpg" alt="Image 2" class="column-image">
-            <p>This is the content for column 2.</p>
-        </div>
-        <div class="column with-video">
-            <!-- You can add content inside the column -->
-            <h2>Naši radovi</h2>
-            <!-- Video embedded using HTML5 <video> element -->
-            <video controls autoplay loop muted class="column-video">
-                <source src="slike/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="column with-background" style="background-color: #5733ff;">
-            <!-- You can add content inside the column -->
-            <h2>Ukratko</h2>
-            <img src="image4.jpg" alt="" class="column-image">
 
-            <p>
-                
-                
-                Cvjetarna Flora, smještena u sred vlastitog parka koji obiluje mnoštvom sezonskog cvijeća i ukrasnih
-                stabala, izazvat će u Vama smiraj i ugodu već samim dolaskom, popraćenim mirisom cvijeća na
-                prilaznom putu. Ugodno okruženje, veliki izbor cvijeća i ukrasnih predmeta, te naše iskusno i ljubazno
-                osoblje učinit će kupovinu u našoj cvjetarni jednim ugodnim trenutkom u Vašem danu.
-                Ako ste pak u prevelikoj gužvi i borite se s nedostatkom vremena, nazovite nas ili pošaljite mail s
-                narudžbom, te dođite u navedeno vrijeme u našu cvjetarnu, gdje će Vas željeni proizvod čekati
-                spreman i pripremljen za preuzimanje.
-                NA poziv i uz prethodni dogovor dolazimo u Vaš prostor i uređujemo Vaš vrt.
-                Dođite u cvjetarnu Flora i ukažite nam povjerenje Vašim odabirom !.
-            </p>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Flora FlowerShop</title>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="CSSRstyle.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top sidenav" id="navbar">
+        <div class="brand-logo">
+            <a class="navbar-brand" href="index.html"><img src="slike/green_logo_svg.svg" width="auto" height="80" alt="FloRI"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#skopljivinavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center" id="skopljivinavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link raz text-white" href="HTML--O_nama.html">O nama</a></li>
+                <li class="nav-item"><a class="nav-link raz text-white" href="HTML--Proizvodi1.html">Proizvodi</a></li>
+                <li class="nav-item"><a class="nav-link raz text-white" href="HTML--Usluge.html">Usluge</a></li>
+                <li class="nav-item"><a class="nav-link raz text-white" href="HTML--Novosti.html">Novosti</a></li>
+                <li class="nav-item"><a class="nav-link raz text-white" href="HTML--Kontakt.html">Kontakt</a></li>
+            </ul>
+
+
+
+
+
+        </div>
+    </nav>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>FloRI</h1>
+            <h2>Za vas stvaramo uspomene koje traju</h2>
         </div>
     </div>
+
+
+
+
+
+
+
+    <div class="container-fluid" style=" margin-bottom: 30%;">
+        <div class="g_podnaslov">
+            <h2>Razgledajte sto vas zanima</h2>
+            <h3>Uljepsajte si dan</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1 col-sm-2">
+
+            </div>
+            <div class="col-md-3 col-sm-2 cvjece">
+                <br>
+                <a href="HTML--Novosti.html"><img class="karta" src="slike/novosti.jpg" width="250" height="250" alt="FloRI"></a>
+                <br><br>
+                <h2>Novosti</h2>
+                <p> </p>
+                <br>
+            </div>
+
+            <div class="col-md-3 col-sm-2 cvjece">
+                <br>
+                <a href="HTML--Usluge.html"><img class="karta" src="slike/usluge.jpg" width="250" height="250" alt="FloRI"></a>
+                <br><br>
+                <h2>Usluge</h2>
+                <p> </p>
+                <br>
+            </div>
+
+            <div class="col-md-3 col-sm-2 cvjece">
+                <br>
+                <a href="HTML--O_nama.html"><img class="karta" src="slike/onama.jpg" width="250" height="250" alt="FloRI"></a>
+                <br><br>
+                <h2>O nama</h2>
+                <p> </p>
+                <br>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style=" margin-bottom: 30%;">
+        <div class="g_podnaslov">
+            
+        </div>
+
+        <div class="g_podnaslov">
+            <h2>Novo u ponudi!</h2>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1 col-sm-2">
+
+            </div>
+            <div class="col-md-3 col-sm-2 cvjece">
+                <br>
+                <a href="#"><img class="karta" src="slike/ruze.jpg" width="250" height="250" alt="FloRI"></a>
+                <br><br>
+                <h2>Buket ruza</h2>
+                <h3>5 eura</h3>
+                <p> </p>
+                <br>
+            </div>
+
+            <div class="col-md-3 col-sm-2 cvjece">
+                <br>
+                <a href="#"><img class="karta" src="slike/basket.jpg" width="250" height="250" alt="FloRI"></a>
+                <br><br>
+                <h2>Košara - ruže</h2>
+                <h3>7 eura</h3>
+                <br>
+            </div>
+
+            <div class="col-md-3 col-sm-2 cvjece">
+                <br>
+                <a href="#"><img class="karta" src="slike/buket.jpg" width="250" height="250" alt="FloRI"></a>
+                <br><br>
+                <h2>Buket</h2>
+                <h3>10 eura</h3>
+                <p> </p>
+                <br>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+    <script src="Script1AA.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
 </body>
-</html>
